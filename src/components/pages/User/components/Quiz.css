@@ -1,0 +1,15 @@
+.quiz__container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: calc(100vw - 250px);
+    background: #fff;
+    margin: 20px
+}
+
+.quiz__title {
+    text-align: center;
+}
+.quiz__content {
+    
+}

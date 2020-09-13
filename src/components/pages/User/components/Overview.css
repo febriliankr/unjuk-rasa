@@ -1,0 +1,15 @@
+.overview__container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: calc(100vw - 250px);
+    background: #fff;
+    margin: 20px
+}
+
+.overview__title {
+    text-align: center;
+}
+.overview__content {
+    
+}

@@ -1,0 +1,116 @@
+.register-container {
+  background-color: #fff;
+  padding: 3rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+}
+
+@media screen and (max-width: 640px) {
+  .register-container {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.register-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 24px;
+  color: #276788;
+}
+
+.register-text > p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.register-text-heading {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.register-text-text {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.register-input {
+  padding: 8px 16px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 16px;
+  /* border: 1px solid #26a0da; */
+  border-bottom: 2px solid #c8c8c8;
+}
+
+.register-input:focus {
+  border-bottom: 2px solid #26a0da;
+  transition: 1s;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-box {
+  padding: 10px;
+}
+
+.newsletter-label {
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  color: #212122;
+}
+
+.newsletter-label-text {
+  padding-left: 10px;
+}
+
+.error-label {
+  font-size: 10px;
+  margin-top: -12px;
+  margin-bottom: 8px;
+}
+
+.username-error {
+  border-bottom: 2px solid rgb(219, 27, 27) !important;
+}
+
+.newsletter-checkbox {
+  background-color: red;
+  cursor: pointer;
+}
+
+.register-page {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+
+.register-image {
+  background-image: url("/images/background-image-register.jpg");
+  width: 800px;
+  background-size: 800px;
+}
+
+@media screen and (max-width: 640px) {
+  .register-image {
+    display: none;
+  }
+}
+
+.pt-1 {
+  padding-top: 10px;
+}
