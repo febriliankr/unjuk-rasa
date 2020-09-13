@@ -118,7 +118,7 @@
 @media screen and (max-width: 820px) {
   .btn {
     max-width: fit-content !important;
-    width: 40% !important;
+    width: fit-content !important;
   }
 }
 

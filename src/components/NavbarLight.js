@@ -34,53 +34,52 @@ function NavbarLight() {
     
     <IconContext.Provider value={{color: '#276788'}}>
     <div className="navbar">
-      <div className="navbar-container container">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img src='/images/dlogo.png' alt="Unjuk Rasa" className="navbar__logo"/>
-          {/* <MdFingerprint className="navbar-icon" /> */}
-          
+      <div className="navbar-container">
+        <Link to="/"  onClick={closeMobileMenu}>
+          <img src='/white-logo.png' alt="Unjuk Rasa" className="navbar__logo"/>
         </Link>
-        <div className="menu-icon" onClick={handleClick}>
-          {click ? <FaTimes /> : <FaBars />}
-        </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-              Home
+            <Link to="/exhibition" className="nav-links" onClick={closeMobileMenu}>
+              Exhibition
             </Link>
           </li>
 
           <li className="nav-item">
-            <Link to="/MG" className="nav-links" onClick={closeMobileMenu}>
-            DCU MG
+            <Link to="/webseries" className="nav-links" onClick={closeMobileMenu}>
+            Web Series
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-              About Us
+            <Link to="/tentang" className="nav-links" onClick={closeMobileMenu}>
+              Tentang
             </Link>
           </li>
-          <li className="nav-btn" >
-            {button ? (
-              <Link className="btn-link" >
-                <Button onClick={() => history.push("/register")} buttonStyle="btn--evoblue" >
-                Register Now
-                </Button>
-              </Link>
-            ) : (
-              <Link className="btn-link" onClick={closeMobileMenu}>
-                <Button
-                  onClick={() => history.push("/register")}
-                  buttonStyle="btn--evoblue"
-                  buttonSize="btn--mobile"
-                >
-                  Register Now
-                </Button>
-              </Link>
-            )}
-          </li>
+          
         </ul>
       </div>
+    </div>
+
+    <div className="navbar-mobile">
+    <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <Link to="/exhibition" className="nav-links" onClick={closeMobileMenu}>
+              Exhib
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/webseries" className="nav-links" onClick={closeMobileMenu}>
+            Series
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/tentang" className="nav-links" onClick={closeMobileMenu}>
+              Tentang
+            </Link>
+          </li>
+          
+        </ul>
     </div>
     </IconContext.Provider>
   );
