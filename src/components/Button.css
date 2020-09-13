@@ -59,13 +59,7 @@
   font-size: 18px !important;
 }
 
-.btn--large:hover,
-.btn--medium:hover,
-.btn--mobile:hover {
-  transition: all 0.3s ease-out;
-  background: #fff;
-  color: #242424;
-}
+
 
 .btn--wide:hover {
   color: #fff;
@@ -119,69 +113,12 @@
   text-decoration: none;
   padding: 8px 16px;
   height: 100%;
-  width: 100%;
 }
 
-.btn--blue:hover {
-  background-image: linear-gradient(to right, #fff 0%, #26a0da 51%, #fff 100%);
-  color: #26a0da;
-}
-
-.btn--evoblue {
-  border-radius: 50px;
-  transition: 0.3s;
-  border: 2px solid #26a0da;
-  background: transparent;
-  color: #26a0da;
-}
-
-.btn--evoblue:hover {
-  border: 2px solid #26a0da;
-  background: #26a0da;
-  color: #fff;
-  box-shadow: 0px 0px 12px 0px rgba(38, 161, 218, 0.4);
-}
-
-@media screen and (max-width: 960px) {
-  .btn--evoblue {
-    max-width: 100% !important;
-  }
-}
-
-.btn--evoblue {
-  border-radius: 50px;
-  transition: 0.3s;
-  border: 2px solid #26a0da;
-  background: transparent;
-  color: #26a0da;
-}
-
-.btn--evoblue:hover {
-  border: 2px solid #26a0da;
-  background: #26a0da;
-  color: #fff;
-  box-shadow: 0px 0px 12px 0px rgba(38, 161, 218, 0.4);
-}
-
-/* evoblue light */
-.btn--evoblue-light {
-  border-radius: 50px;
-  transition: 0.3s;
-  border: 2px solid #fff;
-  background: transparent;
-  color: #fff;
-}
-
-.btn--evoblue-light:hover {
-  border: 2px solid #ffffff;
-  background: #ffffff;
-  color: #26a0da;
-  box-shadow: 0px 0px 70px 0px rgba(108, 226, 255, 0.7);
-}
-
-@media screen and (max-width: 960px) {
-  .btn--evoblue-light {
-    max-width: 100% !important;
+@media screen and (max-width: 820px) {
+  .btn {
+    max-width: fit-content !important;
+    width: 40% !important;
   }
 }
 
@@ -216,3 +153,18 @@
   color: #000;
   box-shadow: 0px 0px 12px 0px rgb(38, 160, 218, 0.2);
 }
+
+.btn--subtle {
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.00);
+  border: 2px solid rgba(255, 255, 255, 0.132);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.04);
+}
+
+.btn--subtle:hover{
+  background-color: rgba(255, 255, 255, 1);
+  color: #7f4029;
+}
+

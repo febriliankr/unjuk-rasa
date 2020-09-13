@@ -1,6 +1,21 @@
+@font-face {
+  font-family: Mirage;
+  src: url(assets/fonts/MirageRegular.otf);
+}
+
+@font-face {
+  font-family: Kaoly;
+  src: url(assets/fonts/Kaoly.ttf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mirage', sans-serif;
+}
+
+h1 {
+  font-family: 'Kaoly', sans-serif;
+  padding: 10px 0;
 }
